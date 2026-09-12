@@ -267,3 +267,110 @@ footer {
     border-color: #25D366;
     box-shadow: 0 0 15px rgba(37, 211, 102, 0.3);
 }
+
+/* LinkedIn Hover Color */
+.contact-links a:has(.fa-linkedin):hover {
+    color: #0A66C2;
+    border-color: #0A66C2;
+    box-shadow: 0 0 15px rgba(10, 102, 194, 0.4);
+}
+
+/* GitHub Hover Color */
+.contact-links a:has(.fa-github):hover {
+    color: #f0f6fc;
+    border-color: #f0f6fc;
+    box-shadow: 0 0 15px rgba(240, 246, 252, 0.3);
+}
+
+/* Email Hover Color */
+.contact-links a:has(.fa-envelope):hover {
+    color: #ea4335;
+    border-color: #ea4335;
+    box-shadow: 0 0 15px rgba(234, 67, 53, 0.4);
+}
+
+/* --- Lovable.app Style Interactive Cards & Icons --- */
+
+/* 1. تنسيق أزرار التواصل الاجتماعي لتشبه كروت Lovable */
+.contact-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.contact-links a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    background: rgba(30, 41, 59, 0.6);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    opacity: 0.7; /* إخفاء جزئي قبل التمرير */
+    transform: scale(0.96);
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.contact-links a i {
+    font-size: 1.2rem;
+    transition: transform 0.35s ease;
+}
+
+/* 2. تأثير الظهور والمرور (Hover Effects) للمنصات */
+
+/* Email */
+.contact-links a:has(.fa-envelope):hover {
+    opacity: 1;
+    color: #ffffff;
+    background: rgba(234, 67, 53, 0.15);
+    border-color: rgba(234, 67, 53, 0.6);
+    box-shadow: 0 0 25px rgba(234, 67, 53, 0.35);
+    transform: translateY(-4px) scale(1.02);
+}
+
+/* LinkedIn */
+.contact-links a:has(.fa-linkedin):hover {
+    opacity: 1;
+    color: #ffffff;
+    background: rgba(10, 102, 194, 0.15);
+    border-color: rgba(10, 102, 194, 0.6);
+    box-shadow: 0 0 25px rgba(10, 102, 194, 0.35);
+    transform: translateY(-4px) scale(1.02);
+}
+
+/* GitHub */
+.contact-links a:has(.fa-github):hover {
+    opacity: 1;
+    color: #ffffff;
+    background: rgba(240, 246, 252, 0.12);
+    border-color: rgba(240, 246, 252, 0.5);
+    box-shadow: 0 0 25px rgba(240, 246, 252, 0.25);
+    transform: translateY(-4px) scale(1.02);
+}
+
+/* WhatsApp */
+.contact-links a:has(.fa-whatsapp):hover {
+    opacity: 1;
+    color: #ffffff;
+    background: rgba(37, 211, 102, 0.15);
+    border-color: rgba(37, 211, 102, 0.6);
+    box-shadow: 0 0 25px rgba(37, 211, 102, 0.35);
+    transform: translateY(-4px) scale(1.02);
+}
+
+/* تحريك الأيقونة نفسها عند الـ Hover */
+.contact-links a:hover i {
+    transform: scale(1.15) rotate(-5deg);
+}
+
+.active-reveal {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
